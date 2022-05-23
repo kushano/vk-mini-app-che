@@ -41,6 +41,7 @@ const App = () => {
 							<View activePanel={activePanel}>
 								<Home id='home' fetchedUser={fetchedUser} go={go} />
 								<Persik id='persik' go={go} />
+								<Cinema id='cinema' go={go} />
 							</View>
 						</SplitCol>
 					</SplitLayout>

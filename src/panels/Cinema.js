@@ -7,7 +7,7 @@ import cinema_db from './dbs/cinema.json'
 
 function Cinema(props) {
 
-	const count = 12
+	const count = 18
 
 	const [number, setNumber] = useState(0)
 

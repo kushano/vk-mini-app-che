@@ -18,12 +18,20 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		<Group header={<Header mode="secondary">Выбирайте:</Header>}>
 			<Div>
-				<Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
+				{/* <Button stretched size="l" mode="secondary" onClick={go} data-to="persik">
 					Show me the Persik, please
 				</Button>
-				<Spacing/>
+				<Spacing/> */}
 				<Button stretched size="l" mode="secondary" onClick={go} data-to="cinema">
 					чё посмотреть?
+				</Button>
+				<Spacing/>
+				<Button stretched size="l" mode="secondary" onClick={go} data-to="books">
+					чё почитать?
+				</Button>
+				<Spacing/>
+				<Button stretched size="l" mode="secondary" onClick={go} data-to="draw">
+					чё порисовать?
 				</Button>
 			</Div>
 		</Group>

@@ -4,7 +4,7 @@ import '@vkontakte/vkui/dist/vkui.css';
 import { Panel, PanelHeader, PanelHeaderBack, Button, FixedLayout, Text, ContentCard, Avatar, Spacing } from '@vkontakte/vkui';
 
 import cinema_db from './dbs/cinema.json'
-import { useState } from 'react/cjs/react.production.min';
+import { useEffect, useState } from 'react/cjs/react.production.min';
 import { number } from 'prop-types';
 
 // fetch(cinema_db).then(cinema_db => console.log(cinema_db))
@@ -15,7 +15,8 @@ function Cinema(props) {
 	const count = 5
 	let number = 4
 	const getRandomNumber = (e) => {
-		e.preventDefault()
+		// window.location.reload(false);
+		// e.preventDefault()
 		number = Math.floor(Math.random() * (count+1))
 		console.log(number)
 	}
@@ -34,6 +35,7 @@ function Cinema(props) {
 
 	return (
 		<Panel id={props.id}>
+			{getRandomNumber()}
 			<FixedLayout>
 				<PanelHeader
 					left={<PanelHeaderBack onClick={props.go} data-to="home" />}

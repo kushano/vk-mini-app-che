@@ -7,7 +7,7 @@ import draw_db from './dbs/draw.json'
 
 function Draw(props) {
 
-    const count = 27
+    const count = 146
 
     const [words, setWords] = useState('')
 

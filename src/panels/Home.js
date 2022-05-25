@@ -33,6 +33,10 @@ const Home = ({ id, go, fetchedUser }) => (
 				<Button stretched size="l" mode="secondary" onClick={go} data-to="draw">
 					чё порисовать?
 				</Button>
+				<Spacing/>
+				<Button stretched size="l" mode="secondary" onClick={go} data-to="cities">
+					куда сгонять?
+				</Button>
 			</Div>
 		</Group>
 	</Panel>

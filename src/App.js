@@ -8,6 +8,7 @@ import Persik from './panels/Persik';
 import Cinema from './panels/Cinema';
 import Books from './panels/Books';
 import Draw from './panels/Draw';
+import Cities from './panels/Cities';
 
 const App = () => {
 	const [scheme, setScheme] = useState('bright_light')
@@ -46,6 +47,7 @@ const App = () => {
 								<Cinema id='cinema' go={go} />
 								<Books id="books" go={go}></Books>
 								<Draw id="draw" go={go}></Draw>
+								<Cities id="cities" go={go}></Cities>
 							</View>
 						</SplitCol>
 					</SplitLayout>
